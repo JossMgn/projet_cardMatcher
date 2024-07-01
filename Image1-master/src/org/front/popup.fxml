@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="361.0" style="-fx-background-color: #222D41;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.front.PopupController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="281.0" layoutY="140.0" mnemonicParsing="false" onAction="#cancel" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #374158;" text="Annuler" textFill="#d7d4d4" />
+      <Button fx:id="validateButton" layoutX="200.0" layoutY="140.0" mnemonicParsing="false" onAction="#validate" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #374158;" text="Valider" textFill="#d7d4d4" />
+      <MenuButton fx:id="colorButton" layoutX="90.0" layoutY="88.0" mnemonicParsing="false" style="-fx-background-color: #374158;" text="Couleur" textFill="#d7d4d4" textOverrun="WORD_ELLIPSIS">
+        <items>
+          <MenuItem fx:id="clubsButton" mnemonicParsing="false" onAction="#clubs" text="Clubs" />
+          <MenuItem fx:id="diamondsButton" mnemonicParsing="false" onAction="#diamonds" text="Diamonds" />
+            <MenuItem fx:id="heartsButton" mnemonicParsing="false" onAction="#hearts" text="Hearts" />
+            <MenuItem fx:id="spadesButton" mnemonicParsing="false" onAction="#spades" text="Spades" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="valueButton" layoutX="200.0" layoutY="88.0" mnemonicParsing="false" style="-fx-background-color: #374158;" text="Valeur" textFill="#d7d4d4">
+         <items>
+            <MenuItem fx:id="aceButton" mnemonicParsing="false" onAction="#ace" text="Ace" />
+            <MenuItem fx:id="kingButton" mnemonicParsing="false" onAction="#king" text="King" />
+            <MenuItem fx:id="queenButton" mnemonicParsing="false" onAction="#queen" text="Queen" />
+            <MenuItem fx:id="aceButton1" mnemonicParsing="false" onAction="#jack" text="Jack" />
+            <MenuItem fx:id="tenButton" mnemonicParsing="false" onAction="#ten" text="10" />
+            <MenuItem fx:id="nineButton" mnemonicParsing="false" onAction="#nine" text="9" />
+            <MenuItem fx:id="heightButton" mnemonicParsing="false" onAction="#height" text="8" />
+            <MenuItem fx:id="sevenButton" mnemonicParsing="false" onAction="#seven" text="7" />
+            <MenuItem fx:id="sixButton" mnemonicParsing="false" onAction="#six" text="6" />
+            <MenuItem fx:id="fiveButton" mnemonicParsing="false" onAction="#five" text="5" />
+            <MenuItem fx:id="fourButton" mnemonicParsing="false" onAction="#four" text="4" />
+            <MenuItem fx:id="threeButton" mnemonicParsing="false" onAction="#three" text="3" />
+            <MenuItem fx:id="twoButton" mnemonicParsing="false" onAction="#two" text="2" />
+         </items>
+      </MenuButton>
+      <Text fill="#d7d4d4" layoutX="41.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisissez la couleur et la valeur de la carte:">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font></Text>
+      <Line endX="11.600006103515625" endY="32.199989318847656" layoutX="172.0" layoutY="84.0" startX="11.600006103515625" startY="7.62939453125E-6" stroke="#d76c58" />
+      <TextField fx:id="nameTxt" alignment="CENTER" editable="false" layoutX="108.0" layoutY="45.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: none; -fx-text-fill: #d76c58;" />
+   </children>
+</Pane>

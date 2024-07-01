@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #222D41;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.front.ApprentissageController">
+   <children>
+      <Button fx:id="captureButton" layoutX="458.0" layoutY="578.0" mnemonicParsing="false" onAction="#captureIt" prefHeight="59.0" prefWidth="175.0" style="-fx-background-color: #374158;" text="Capture" textFill="#d7d4d4" AnchorPane.bottomAnchor="62.799999999999955" />
+      <Button fx:id="reconaissanceButton" layoutX="340.0" layoutY="34.0" mnemonicParsing="false" onAction="#switchToReconaissance" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #374158;" text="Switch" textFill="#d7d4d4" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="34.0" />
+      <AnchorPane layoutX="504.3999938964844" layoutY="13.0" prefHeight="700.0" prefWidth="247.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+         	  <ImageView fx:id="objFind" accessibleText="ObjTrouve" fitHeight="271.0" fitWidth="175.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="54.33203125" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@Carte.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="labelApprentisage" editable="false" layoutX="33.0" layoutY="301.0" prefHeight="58.0" prefWidth="240.0" style="-fx-background-color: #374158; -fx-border-color: #7F5056; -fx-border-width: 3;" AnchorPane.rightAnchor="22.0" />
+            <ListView id="listSelectionComparaison" fx:id="myListCard" layoutX="33.0" layoutY="242.0" prefHeight="304.0" prefWidth="240.0" style="-fx-background-color: #374158; -fx-border-width: 3; -fx-border-color: #7F5056;" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="22.0" />
+            <Label fx:id="descriptionAppretissage" layoutX="30.0" layoutY="303.0" prefHeight="55.0" prefWidth="240.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="180.0" layoutY="125.0" prefHeight="412.0" prefWidth="759.0">
+         <children>
+            <ImageView fx:id="apprentissageScreen" fitHeight="412.0" fitWidth="800.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false" x="15.0" y="70.0">
+               <image>
+                  <Image url="@pingou.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d66b5802" height="290.0" layoutX="459.0" layoutY="200.0" stroke="#d76c58" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+      <Label contentDisplay="CENTER" prefHeight="70.0" prefWidth="284.0" text="Mode Apprentissage" textAlignment="CENTER" textFill="#d76c58" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Calibri Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="925.0" layoutY="644.0" mnemonicParsing="false" onAction="#deletePickUpFile" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #374158;" text="Delete" textFill="#d7d4d4" />
+   </children>
+</AnchorPane>
